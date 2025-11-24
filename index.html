@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Jobs: A Tribute to Innovation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 80px 0; }
+        h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 300; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; }
+        nav { background: #f8f9fa; padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { margin: 0 20px; }
+        nav a { text-decoration: none; color: #333; font-weight: 500; padding: 10px 15px; border-radius: 25px; transition: all 0.3s; }
+        nav a:hover { background: #667eea; color: white; transform: translateY(-2px); }
+        section { padding: 60px 0; }
+        .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 50px; color: #333; }
+        .timeline { position: relative; max-width: 800px; margin: 0 auto; }
+        .timeline::after { content: ''; position: absolute; width: 6px; background: #667eea; top: 0; bottom: 0; left: 50%; margin-left: -3px; }
+        .timeline-item { padding: 10px 40px; position: relative; background: inherit; width: 50%; }
+        .timeline-item::after { content: ''; position: absolute; width: 25px; height: 25px; right: -17px; background: white; border: 4px solid #667eea; top: 15px; border-radius: 50%; z-index: 1; }
+        .timeline-item:nth-child(odd) { left: 0; }
+        .timeline-item:nth-child(even) { left: 50%; }
+        .timeline-item:nth-child(even)::after { left: -16px; }
+        .timeline-content { padding: 20px 30px; background: white; position: relative; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .timeline-content:hover { transform: translateY(-5px); }
+        .timeline-year { color: #667eea; font-weight: bold; font-size: 1.1rem; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s; }
+        .gallery-item:hover { transform: scale(1.05); }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; }
+        .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; }
+        .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .quote-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-left: 5px solid #667eea; transition: transform 0.3s; }
+        .quote-card:hover { transform: translateY(-5px); }
+        .quote-text { font-size: 1.1rem; font-style: italic; margin-bottom: 15px; color: #555; }
+        .quote-author { font-weight: bold; color: #667eea; }
+        footer { background: #333; color: white; text-align: center; padding: 40px 0; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-item::before { left: 60px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; }
+            .timeline-item:nth-child(even) { left: 0%; }
+            nav ul { flex-direction: column; align-items: center; }
+            nav li { margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Steve Jobs</h1>
+            <p class="subtitle">Visionary • Innovator • Pioneer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#founding">The Founding of Apple</a></li>
+                <li><a href="#pixar">The Pixar Era</a></li>
+                <li><a href="#iphone">The iPhone Revolution</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="founding">
+        <div class="container">
+            <h2 class="section-title">The Founding of Apple</h2>
+            <p>Steve Jobs's journey began with a blend of counter-cultural influences and an innate understanding of market potential. His collaboration with Steve Wozniak, initially on projects like the "blue box," demonstrated their complementary strengths: Wozniak's technical prowess and Jobs's ability to identify opportunities and bring products to users.</p>
+            <p>In 1976, Jobs convinced Wozniak to commercialize the Apple I circuit board, raising initial capital by selling his Volkswagen bus. This venture, started in Jobs's family garage, confirmed a nascent demand for personal computing. The Apple II, released in 1977, established Apple as a significant player with its integrated keyboard, attractive plastic casing, color graphics, and user-friendly design.</p>
+        </div>
+    </section>
+
+    <section id="pixar">
+        <div class="container">
+            <h2 class="section-title">The Pixar Era</h2>
+            <p>After acquiring the Graphics Group from Lucasfilm in 1986 for approximately $10 million, Jobs recognized that Pixar's true potential lay in animation. He provided crucial financial backing and strategic guidance, supporting animated short films like Luxo Jr. and Tin Toy as creative proofs-of-concept.</p>
+            <p>With Toy Story nearing completion in 1995, Jobs orchestrated a strategic repositioning, securing a distribution deal with Disney and timing an IPO with the film's release. Toy Story's monumental success propelled Pixar's IPO, valuing the company at $1.5 billion on its opening day.</p>
+        </div>
+    </section>
+
+    <section id="iphone">
+        <div class="container">
+            <h2 class="section-title">The iPhone Revolution</h2>
+            <p>Steve Jobs's role in the iPhone's development was pivotal. He shifted the device's vision from an incremental iPod upgrade to a completely redefined "phone," insisting on building "the best phone possible" that would reinvent mobile calling. His focus on handheld usability and call quality dictated fundamental design priorities.</p>
+            <p>The launch on January 9, 2007, was a masterclass in presentation. The iconic "Today, Apple is going to reinvent the phone" declaration set the stage for a product that seamlessly merged an iPod, a phone, and an internet communicator, transforming the smartphone industry forever.</p>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <div class="container">
+            <h2 class="section-title">Timeline of Steve Jobs' Life</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1955</div>
+                        <p>Born in San Francisco, California</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1976</div>
+                        <p>Co-founded Apple Computer with Steve Wozniak</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1977</div>
+                        <p>Apple II launched, revolutionizing personal computing</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1984</div>
+                        <p>Macintosh computer introduced with iconic "1984" commercial</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1985</div>
+                        <p>Left Apple and founded NeXT Computer</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1986</div>
+                        <p>Acquired Pixar Animation Studios from Lucasfilm</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1995</div>
+                        <p>Toy Story released, Pixar went public</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1997</div>
+                        <p>Returned to Apple as interim CEO</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2007</div>
+                        <p>iPhone launched, revolutionizing mobile technology</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2011</div>
+                        <p>Passed away on October 5, leaving an incredible legacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Image Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.csmonitor.com/csmarchives/2011/11/141340047.JPG?alias=standard_1200x800" alt="Steve Jobs Portrait">
+                    <div class="gallery-caption">Steve Jobs - Visionary Leader</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://media.wired.com/photos/592687718d4ebc5ab806a98d/master/pass/apple-steve-jobs-iphone-AP_070109066608.jpg" alt="Steve Jobs iPhone Launch">
+                    <div class="gallery-caption">iPhone Launch 2007</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://static0.pocketlintimages.com/wordpress/wp-content/uploads/151422-laptops-feature-historic-apple-mac-computers-walk-down-memory-lane-with-these-classic-machines-image1-h6vqy4r2ra.jpg" alt="Apple Macintosh Computers">
+                    <div class="gallery-caption">Evolution of Macintosh</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://photos5.appleinsider.com/gallery/29370-129405-000-lead-Original-Mac-xl.jpg" alt="Original Macintosh 1984">
+                    <div class="gallery-caption">Original Macintosh 1984</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes">
+        <div class="container">
+            <h2 class="section-title">Inspirational Quotes</h2>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <div class="quote-text">"Stay hungry. Stay foolish."</div>
+                    <div class="quote-author">- Steve Jobs</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Innovation distinguishes between a leader and a follower."</div>
+                    <div class="quote-author">- Steve Jobs</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"The only way to do great work is to love what you do."</div>
+                    <div class="quote-author">- Steve Jobs</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"I want to put a ding in the universe."</div>
+                    <div class="quote-author">- Steve Jobs</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Quality is more important than quantity. One home run is much better than two doubles."</div>
+                    <div class="quote-author">- Steve Jobs</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Don't let the noise of others' opinions drown out your own inner voice."</div>
+                    <div class="quote-author">- Steve Jobs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Steve Jobs Tribute. Remembering a visionary who changed the world.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
